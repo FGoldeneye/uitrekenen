@@ -6,28 +6,12 @@
     <title>Uitrekenaar</title>
 </head>
 <body>
-    <input type="text" name="lengte" placeholder="lengte" id="lengte">
-    <input type="text" name="breedte" placeholder="breedte" id="breedte">
-    <input type="text" name="naam" placeholder="naam" id="naam">
+    <div id="inputContainer">
+        <!-- Initial input boxes -->
+    </div>
+    <button onclick="addInputBox()">+</button>
     <button onclick="getInputValue()">Totaal</button>
-    <p id="output1"></p>
-    <p id="output2"></p>
-    <p id="output3"></p>
-    <p id="output4"></p>
-
-    <script>
-        function getInputValue() {
-            var lengte = document.getElementById("lengte").value;
-            var breedte = document.getElementById("breedte").value;
-            var naam = document.getElementById("naam").value;
-            var antwoord = ((lengte-70)/10) * 4 + ((breedte-90)/10)*4 + 125
-            document.getElementById("output1").textContent = lengte;
-            document.getElementById("output2").textContent = breedte;
-            document.getElementById("output3").textContent = naam;
-            document.getElementById("output4").textContent = antwoord;
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
